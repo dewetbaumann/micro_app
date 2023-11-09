@@ -1,3 +1,5 @@
+name: Validate CI
+
 on:
   pull_request:
     branches: [ "main" ]
@@ -8,10 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: dart-lang/setup-dart@v1.3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'adopt'
+          java-version: 17
+          
+      - uses: subosito/flutter-action@v2
+        with:
+          # flutter-version: 3.13.9
+          channel: 'stable'
 
       - name: Get Dependencies
-        run: dart pub get
+        run: flutter pub get
 
       - name: Validate Title of PR
         run: echo ${{ github.event.pull_request.title }} | dart run commitlint_cli
+        
+      # - name: Validate PR Commits
+      #   run: VERBOSE=true dart run commitlint_cli --from=${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }} --to=${{ github.event.pull_request.head.sha }} --config lib/commitlint.yaml

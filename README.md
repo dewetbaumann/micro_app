@@ -1,16 +1,26 @@
-# micro_app
+Micro frontend template
 
-A new Flutter project.
+## What we are looking
 
-## Getting Started
+![architecture](./arch.png)
 
-This project is a starting point for a Flutter application.
+## Dependencies
+Execute this command and add this dependencies in your `pubspec.yaml` file:
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter pub add dio logger print_map
+flutter pub add --dev lint commitlint_cli 
+dart pub add --dev husky
+dart run husky install
+dart run husky set .husky/commit-msg 'dart run commitlint_cli --edit "$1"'`
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Errors
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Husky settings in case of errors
+
+```
+dart pub add --dev husky
+dart run husky install
+dart run husky set .husky/commit-msg 'dart run commitlint_cli --edit "$1"'``
+```

@@ -1,15 +1,18 @@
 name: micro_app
 description: Micro frontend
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.5 <4.0.0'
+  sdk: ">=3.1.5 <4.0.0"
 
 dependencies:
   cupertino_icons: ^1.0.2
+  dio: ^5.3.3
   flutter:
     sdk: flutter
+  logger: ^2.0.2+1
+  print_map: ^1.1.0+0
 
 dev_dependencies:
   commitlint_cli: ^0.7.1
