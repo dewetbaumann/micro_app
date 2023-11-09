@@ -1,7 +1,8 @@
 Micro frontend template
 
 ## What we are looking
-![architecture] https://docs.github.com/assets/cb-39745/mw-1440/images/help/writing/image-rendered.webp
+
+![architecture](./arch.png)
 
 ## Dependencies
 Execute this commando and add this dependencies in your `pubspec.yaml` file:
