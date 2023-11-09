@@ -15,6 +15,7 @@ jobs:
     - name: Verificar estructura del directorio
       run: |
         ls -R $GITHUB_WORKSPACE
+        ls -la
 
     - name: "Retrieve version"
       id: version
@@ -24,7 +25,7 @@ jobs:
 
     - name: "Increment version"
       run: |
-        git config --global user.email "actions@github.com"
+        git config --global user.email "dewetbaumann@outlook.com"
         git config --global user.name "GitHub Actions"
     
         sed -i 's/${{ steps.version.outputs.OLD_VERSION }}/${{ steps.version.outputs.NEW_VERSION }}/g' ${GITHUB_WORKSPACE}/pubspec.yaml
