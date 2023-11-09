@@ -5,7 +5,7 @@ Micro frontend template
 ![architecture](./arch.png)
 
 ## Dependencies
-Execute this commando and add this dependencies in your `pubspec.yaml` file:
+Execute this command and add this dependencies in your `pubspec.yaml` file:
 
 ```
 flutter pub add dio logger print_map
