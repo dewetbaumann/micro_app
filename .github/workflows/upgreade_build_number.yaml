@@ -1,4 +1,4 @@
-name: Upgrade build version
+name: Retrieve build version
 
 on:
   pull_request:
@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Verificar estructura del directorio
-      run: |
-        ls -R $GITHUB_WORKSPACE
-        ls -la
+    # - name: Verificar estructura del directorio
+    #   run: |
+    #     ls -R $GITHUB_WORKSPACE
+    #     ls -la
 
     - name: "Retrieve version"
       id: version
