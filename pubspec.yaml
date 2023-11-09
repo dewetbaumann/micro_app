@@ -1,5 +1,5 @@
 name: micro_app
-description: A new Flutter project.
+description: Micro frontend
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -7,14 +7,16 @@ environment:
   sdk: '>=3.1.5 <4.0.0'
 
 dependencies:
+  cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  commitlint_cli: ^0.7.1
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  husky: ^0.1.6
+  lint: ^2.2.0
 
 flutter:
   uses-material-design: true

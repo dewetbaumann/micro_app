@@ -1,0 +1,12 @@
+include: package:commitlint_cli/commitlint.yaml
+
+# Custom rules
+rules:
+  type-case:
+    - 2
+    - always
+    - lower-case
+
+defaultIgnores: true
+ignores:
+  - r'^fixup'
