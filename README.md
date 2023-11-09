@@ -1,16 +1,25 @@
-# micro_app
+Micro frontend template
 
-A new Flutter project.
+## What we are looking
+![architecture] https://docs.github.com/assets/cb-39745/mw-1440/images/help/writing/image-rendered.webp
 
-## Getting Started
+## Dependencies
+Execute this commando and add this dependencies in your `pubspec.yaml` file:
 
-This project is a starting point for a Flutter application.
+```
+flutter pub add dio logger print_map
+flutter pub add --dev lint commitlint_cli 
+dart pub add --dev husky
+dart run husky install
+dart run husky set .husky/commit-msg 'dart run commitlint_cli --edit "$1"'`
+```
 
-A few resources to get you started if this is your first Flutter project:
+### Errors
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Husky settings in case of errors
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+dart pub add --dev husky
+dart run husky install
+dart run husky set .husky/commit-msg 'dart run commitlint_cli --edit "$1"'``
+```

@@ -18,6 +18,7 @@ dev_dependencies:
   commitlint_cli: ^0.7.1
   flutter_test:
     sdk: flutter
+  husky: ^0.1.6
   lint: ^2.2.0
 
 flutter:
