@@ -1,3 +1,5 @@
+name: Upgrade build version
+
 on:
   pull_request:
     branches: [ "main" ]
@@ -21,7 +23,7 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
     
-        sed -i 's/${{ steps.version.outputs.OLD_VERSION }}/${{ steps.version.outputs.NEW_VERSION }}/g' ${GITHUB_WORKSPACE}/pubspec.yaml
+        sed -i 's/${{ steps.version.outputs.OLD_VERSION }}/${{ steps.version.outputs.NEW_VERSION }}/g' pubspec.yaml
         git add ${GITHUB_WORKSPACE}/pubspec.yaml
         git commit -m "Incrementar versión"
         git push origin $GITHUB_REF
