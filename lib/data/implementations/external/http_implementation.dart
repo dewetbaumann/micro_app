@@ -1,9 +1,6 @@
 import 'dart:io';
-
 import 'package:dio/dio.dart';
 import 'package:logger/logger.dart';
-import 'package:micro_app/data/repositories/external/http_repository.dart';
-import 'package:micro_app/domain/models/http_response_model.dart';
 import 'package:print_map/print_map.dart';
 
 class HttpImplementation implements HttpRepository {

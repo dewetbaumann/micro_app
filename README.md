@@ -4,6 +4,12 @@ Micro frontend template
 
 ![architecture](./arch.png)
 
+
+## Installation
+
+Clone repo and import all dependencies in each file
+
+
 ## Dependencies
 Execute this command and add this dependencies in your `pubspec.yaml` file:
 

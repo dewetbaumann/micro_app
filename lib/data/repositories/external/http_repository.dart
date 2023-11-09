@@ -1,5 +1,3 @@
-import 'package:micro_app/domain/models/http_response_model.dart';
-
 abstract class HttpRepository {
   Future<HttpResponseModel> get<T>(
     String url, {
