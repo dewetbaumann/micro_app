@@ -8,8 +8,10 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
+  dio: ^5.3.3
   flutter:
     sdk: flutter
+  logger: ^2.0.2+1
 
 dev_dependencies:
   commitlint_cli: ^0.7.1
@@ -17,6 +19,7 @@ dev_dependencies:
     sdk: flutter
   husky: ^0.1.6
   lint: ^2.2.0
+  print_map: ^1.1.0+0
 
 flutter:
   uses-material-design: true
