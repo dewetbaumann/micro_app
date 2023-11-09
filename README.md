@@ -4,6 +4,12 @@ Micro frontend template
 
 ![architecture](./arch.png)
 
+## Pros
+
+  - Use conventional commit in this project ✅
+  - Check PR title with conventional commits ✅
+  - Stricit linter to make great code and impove code quality 📈
+  - Pipeline integrated 🗒️
 
 ## Installation
 
