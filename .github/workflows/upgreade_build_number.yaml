@@ -2,7 +2,7 @@ name: Upgrade build version
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: [ "develop" ]
     types: [opened, synchronize]
   #   types:
   #     - closed
